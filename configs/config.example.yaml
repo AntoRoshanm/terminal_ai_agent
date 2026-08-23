@@ -1,0 +1,30 @@
+# Windows AI Agent Configuration Example
+
+provider:
+  provider: "gemini" # Options: gemini, openai, anthropic, ollama, local
+  model: "gemini-2.5-flash"
+  api_key: "" # Or set GEMINI_API_KEY / OPENAI_API_KEY / ANTHROPIC_API_KEY in .env
+  base_url: "" # e.g. http://localhost:11434/v1 for Ollama
+  temperature: 0.2
+  max_tokens: 4096
+  timeout_seconds: 60
+
+security:
+  auto_approve_level_0: true # Read-only inspection tools
+  auto_approve_level_1: true # Low-risk project modifications
+  require_approval_level_2: true # User confirmation for software/services
+  require_approval_level_3: true # Explicit confirmation for high risk/system actions
+  protected_paths:
+    - "C:\\Windows"
+    - "C:\\Windows\\System32"
+    - "C:\\Program Files"
+    - "C:\\Program Files (x86)"
+
+storage:
+  db_path: "~/.windows_ai_agent/agent.db"
+  logs_dir: "~/.windows_ai_agent/logs"
+
+system_prompt: |
+  You are Windows AI Agent, an autonomous and reliable assistant for Windows.
+  You can converse, inspect system state, execute approved tools, verify results,
+  and recover from errors safely.

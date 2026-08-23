@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "web-search": {
+      "name": "web-search",
+      "command": "python",
+      "args": ["-m", "app.mcp.servers.web_search_server"],
+      "enabled": true,
+      "description": "DuckDuckGo live web search and web content fetcher"
+    },
+    "pdf-generator": {
+      "name": "pdf-generator",
+      "command": "python",
+      "args": ["-m", "app.mcp.servers.pdf_server"],
+      "enabled": true,
+      "description": "ReportLab PDF document generator with styling and verification"
+    },
+    "docx-generator": {
+      "name": "docx-generator",
+      "command": "python",
+      "args": ["-m", "app.mcp.servers.docx_server"],
+      "enabled": true,
+      "description": "python-docx Word document generator with headings and verification"
+    },
+    "pptx-generator": {
+      "name": "pptx-generator",
+      "command": "python",
+      "args": ["-m", "app.mcp.servers.pptx_server"],
+      "enabled": true,
+      "description": "python-pptx PowerPoint presentation generator with slides and verification"
+    }
+  }
+}
+

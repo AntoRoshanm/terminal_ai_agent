@@ -1,0 +1,18 @@
+# Windows AI Agent Configuration
+provider:
+  provider: "ollama"
+  model: "llama3-groq-tool-use:8b"
+  orchestration_model: "llama3-groq-tool-use:8b"
+  content_generation_model: "qwen3:8b"
+  base_url: "http://localhost:11434/v1"
+  api_key: "ollama"
+  temperature: 0.2
+  max_tokens: 8192
+  timeout_seconds: 180
+
+security:
+  auto_approve_level_0: true
+  auto_approve_level_1: true
+  require_approval_level_2: true
+  require_approval_level_3: true
+

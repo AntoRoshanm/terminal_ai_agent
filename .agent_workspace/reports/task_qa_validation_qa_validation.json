@@ -1,0 +1,25 @@
+{
+  "validated_file": "C:\\roshan\\Terminal\\.agent_workspace\\outputs\\task_doc_generation_deliverable.md",
+  "size_bytes": 11081,
+  "word_count": 1405,
+  "placeholders_found": 0,
+  "verified_deliverables": [
+    {
+      "format": "md",
+      "path": "C:\\roshan\\Terminal\\.agent_workspace\\outputs\\task_doc_generation_deliverable.md",
+      "size_bytes": 11081
+    },
+    {
+      "format": "pdf",
+      "path": "C:\\roshan\\Terminal\\.agent_workspace\\outputs\\task_doc_generation_deliverable.pdf",
+      "size_bytes": 11912
+    },
+    {
+      "format": "docx",
+      "path": "C:\\roshan\\Terminal\\.agent_workspace\\outputs\\task_doc_generation_deliverable.docx",
+      "size_bytes": 41070
+    }
+  ],
+  "qa_status": "PASSED",
+  "verification_time": "2026-08-23T14:27:16.588703+00:00"
+}
